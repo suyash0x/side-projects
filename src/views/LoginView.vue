@@ -2,6 +2,7 @@
 import ButtonComponent from '@/components/ButtonComponent.vue'
 import IconComponent from '@/components/IconComponent.vue'
 import InputComponent from '@/components/InputComponent.vue'
+import router from '@/router'
 import { ref } from 'vue'
 
 const userDetails = ref({
@@ -10,8 +11,7 @@ const userDetails = ref({
 })
 
 const handleLogin = () => {
-  console.log(userDetails.value.email)
-  console.log(userDetails.value.password)
+  router.push('/')
 }
 </script>
 
